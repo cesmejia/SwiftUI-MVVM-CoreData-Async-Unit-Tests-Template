@@ -17,6 +17,7 @@
 		CA35A814283041B8001176CB /* CoreData_MVVM_TemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA35A813283041B8001176CB /* CoreData_MVVM_TemplateUITests.swift */; };
 		CA35A816283041B8001176CB /* CoreData_MVVM_TemplateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA35A815283041B8001176CB /* CoreData_MVVM_TemplateUITestsLaunchTests.swift */; };
 		CA35A82328304279001176CB /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA35A82228304279001176CB /* ContentViewModel.swift */; };
+		CA35A8622830E361001176CB /* ContentViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA35A8612830E361001176CB /* ContentViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		CA35A813283041B8001176CB /* CoreData_MVVM_TemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData_MVVM_TemplateUITests.swift; sourceTree = "<group>"; };
 		CA35A815283041B8001176CB /* CoreData_MVVM_TemplateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData_MVVM_TemplateUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CA35A82228304279001176CB /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		CA35A8612830E361001176CB /* ContentViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				CA35A809283041B8001176CB /* CoreData_MVVM_TemplateTests.swift */,
+				CA35A8612830E361001176CB /* ContentViewModelTests.swift */,
 			);
 			path = "CoreData-MVVM-TemplateTests";
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA35A8622830E361001176CB /* ContentViewModelTests.swift in Sources */,
 				CA35A80A283041B8001176CB /* CoreData_MVVM_TemplateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
