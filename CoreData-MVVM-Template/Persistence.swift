@@ -7,7 +7,7 @@
 
 import CoreData
 
-struct PersistenceController {
+class PersistenceController: ObservableObject {
     static let shared = PersistenceController()
 
     static var preview: PersistenceController = {
@@ -52,5 +52,47 @@ struct PersistenceController {
             }
         })
         container.viewContext.automaticallyMergesChangesFromParent = true
+    }
+    
+    func save() async throws {
+        let viewContext = container.viewContext
+        
+        if viewContext.hasChanges {
+            await viewContext.perform {
+                do {
+                    try viewContext.save()
+                } catch {
+                    // Replace this implementation with code to handle the error appropriately.
+                    // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                    let nsError = error as NSError
+                    fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+                }
+            }
+        }
+    }
+    
+    func delete(_ object: NSManagedObject) {
+        container.viewContext.delete(object)
+    }
+    
+    func fetchItems() async throws -> [Item] {
+        return try await container.viewContext.perform {
+            let request = Item.fetchRequest()
+            return try request.execute()
+        }
+    }
+    
+    func addItem(with date: Date) async throws {
+        let viewContext = container.viewContext
+        
+        let newItem = Item(context: viewContext)
+        newItem.timestamp = date
+        
+        do {
+            try await save()
+        } catch {
+            let nsError = error as NSError
+            throw nsError
+        }
     }
 }
