@@ -49,7 +49,7 @@ extension ContentView {
             } catch {
                 let nsError = error as NSError
                 errorMessage = nsError.localizedDescription
-                showErrorAlert.toggle()
+                showErrorAlert = true
             }
         }
         
@@ -62,7 +62,7 @@ extension ContentView {
             } catch {
                 let nsError = error as NSError
                 errorMessage = nsError.localizedDescription
-                showErrorAlert.toggle()
+                showErrorAlert = true
             }
         }
         
