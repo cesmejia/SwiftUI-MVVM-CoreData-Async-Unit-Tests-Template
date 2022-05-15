@@ -16,6 +16,7 @@
 		CA35A80A283041B8001176CB /* CoreData_MVVM_TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA35A809283041B8001176CB /* CoreData_MVVM_TemplateTests.swift */; };
 		CA35A814283041B8001176CB /* CoreData_MVVM_TemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA35A813283041B8001176CB /* CoreData_MVVM_TemplateUITests.swift */; };
 		CA35A816283041B8001176CB /* CoreData_MVVM_TemplateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA35A815283041B8001176CB /* CoreData_MVVM_TemplateUITestsLaunchTests.swift */; };
+		CA35A82328304279001176CB /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA35A82228304279001176CB /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		CA35A80F283041B8001176CB /* CoreData-MVVM-TemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreData-MVVM-TemplateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA35A813283041B8001176CB /* CoreData_MVVM_TemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData_MVVM_TemplateUITests.swift; sourceTree = "<group>"; };
 		CA35A815283041B8001176CB /* CoreData_MVVM_TemplateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData_MVVM_TemplateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA35A82228304279001176CB /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				CA35A7F3283041B6001176CB /* CoreData_MVVM_TemplateApp.swift */,
 				CA35A7F5283041B6001176CB /* ContentView.swift */,
+				CA35A82228304279001176CB /* ContentViewModel.swift */,
 				CA35A7F7283041B7001176CB /* Assets.xcassets */,
 				CA35A7FC283041B7001176CB /* Persistence.swift */,
 				CA35A7FE283041B7001176CB /* CoreData_MVVM_Template.xcdatamodeld */,
@@ -267,6 +270,7 @@
 				CA35A7F6283041B6001176CB /* ContentView.swift in Sources */,
 				CA35A800283041B7001176CB /* CoreData_MVVM_Template.xcdatamodeld in Sources */,
 				CA35A7F4283041B6001176CB /* CoreData_MVVM_TemplateApp.swift in Sources */,
+				CA35A82328304279001176CB /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
